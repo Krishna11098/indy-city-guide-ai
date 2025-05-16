@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
@@ -69,23 +68,23 @@
   }
   
   .btn {
-    @apply py-2.5 px-5 rounded-lg font-semibold cursor-pointer transition-all duration-300 inline-block text-sm;
+    @apply py-2.5 px-5 rounded-md font-semibold cursor-pointer transition-all duration-300 inline-block text-sm;
   }
   
   .btn-outline {
-    @apply border-2 border-primary bg-transparent;
+    @apply border border-primary text-primary bg-transparent hover:bg-gray-50;
   }
   
   .btn-solid {
-    @apply bg-[#243b5f] text-white border-2 border-[#243b5f];
+    @apply bg-primary text-white;
   }
   
   .btn-hero {
-    @apply py-3.5 px-8 text-lg bg-highlight border-none text-white rounded-lg shadow-[0_4px_15px_rgba(238,155,0,0.4)] transition-all duration-300 font-semibold cursor-pointer inline-block hover:translate-y-[-3px] hover:shadow-[0_6px_20px_rgba(238,155,0,0.5)] hover:bg-[#ed1c24];
+    @apply py-3.5 px-8 text-lg bg-[#ed1c24] border-none text-white rounded-lg shadow-[0_4px_15px_rgba(237,28,36,0.4)] transition-all duration-300 font-semibold cursor-pointer inline-block hover:translate-y-[-3px] hover:shadow-[0_6px_20px_rgba(237,28,36,0.5)] hover:bg-[#d01920];
   }
   
   .btn-cta {
-    @apply py-4 px-10 text-lg bg-[#243b5f] text-white border-none rounded-lg font-semibold cursor-pointer transition-all duration-300 inline-block shadow-[0_4px_15px_rgba(238,155,0,0.4)] hover:bg-[#ed1c24] hover:translate-y-[-3px] hover:shadow-[0_6px_20px_rgba(238,155,0,0.5)];
+    @apply py-4 px-10 text-lg bg-[#ed1c24] text-white border-none rounded-lg font-semibold cursor-pointer transition-all duration-300 inline-block shadow-[0_4px_15px_rgba(237,28,36,0.4)] hover:bg-[#d01920] hover:translate-y-[-3px] hover:shadow-[0_6px_20px_rgba(237,28,36,0.5)];
   }
   
   .section-header h2 {

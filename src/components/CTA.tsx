@@ -35,7 +35,7 @@ const CTA = () => {
   }, []);
   
   return (
-    <div ref={sectionRef} className="py-24 px-8 bg-highlight text-white text-center">
+    <div ref={sectionRef} className="py-24 px-8 bg-[#14284b] text-white text-center">
       <div className="max-w-[800px] mx-auto">
         <div className="cta-content opacity-0 transform translate-y-5 transition-all duration-500">
           <h2 className="text-4xl mb-6">Ready to Explore Indianapolis?</h2>
