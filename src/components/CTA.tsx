@@ -39,7 +39,7 @@ const CTA = () => {
       <div className="max-w-[800px] mx-auto">
         <div className="cta-content opacity-0 transform translate-y-5 transition-all duration-500">
           <h2 className="text-4xl mb-6">Ready to Explore Indianapolis?</h2>
-          <p className="text-lg mb-10 opacity-90">Join thousands of residents and visitors who use IndyChat to navigate the Circle City with confidence.</p>
+          <p className="text-lg mb-10 text-white opacity-90">Join thousands of residents and visitors who use IndyChat to navigate the Circle City with confidence.</p>
           <Link to="/signup" className="btn-cta">Get Started For Free</Link>
         </div>
       </div>

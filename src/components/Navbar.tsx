@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <nav 
       id="navbar" 
-      className="py-4 px-8 flex justify-between items-center bg-white/98 w-full z-[1000] shadow-[0_2px_15px_rgba(0,0,0,0.1)] transition-all duration-300 md:px-8"
+      className="py-4 px-8 flex justify-between items-center bg-white/98 w-full z-[1000] shadow-[0_2px_15px_rgba(0,0,0,0.1)] md:px-8"
     >
       <Link to="/" className="text-2xl font-bold text-primary cursor-pointer select-none flex items-center gap-2 transition-all duration-300">
         <img src="/indianapolis.png" alt="IndyChat Logo" className="h-[50px] w-[50px]" />
@@ -46,7 +46,7 @@ const Navbar = () => {
       
       <button 
         id="mobileMenuBtn"
-        className="hidden md:block bg-none border-none text-dark text-2xl cursor-pointer"
+        className="hidden sm:hidden md:block lg:hidden bg-none border-none text-dark text-2xl cursor-pointer"
         onClick={toggleMenu}
       >
         <i className="fas fa-bars"></i>
@@ -54,9 +54,9 @@ const Navbar = () => {
       
       <div 
         id="navLinks"
-        className={`flex gap-7 items-center md:fixed md:top-[70px] md:w-full md:h-[calc(100vh-70px)] md:bg-white md:flex-col md:gap-6 md:p-8 md:transition-all md:duration-300 md:shadow-[0_10px_20px_rgba(0,0,0,0.1)] ${
-          isMenuOpen ? 'md:left-0' : 'md:left-[-100%]'
-        }`}
+        className={`flex gap-7 items-center lg:flex md:hidden sm:hidden ${
+          isMenuOpen ? 'md:flex' : 'md:hidden'
+        } md:fixed md:top-[70px] md:w-full md:left-0 md:h-[calc(100vh-70px)] md:bg-white md:flex-col md:gap-6 md:p-8 md:transition-all md:duration-300 md:shadow-[0_10px_20px_rgba(0,0,0,0.1)]`}
       >
         <a href="#home" className="nav-link" onClick={closeMenu}>Home</a>
         <a href="#features" className="nav-link" onClick={closeMenu}>Features</a>
@@ -67,7 +67,7 @@ const Navbar = () => {
         
         <div className="flex gap-4 ml-6 md:ml-0 md:mt-4 md:w-full md:flex-col md:gap-4">
           <Link to="/login" className="btn btn-outline hover:text-[#eee] hover:bg-[#243b5f]" onClick={closeMenu}>Login</Link>
-          <Link to="/signup" className="btn btn-solid bg-[#243b5f] text-white hover:bg-[#1a2b47]" onClick={closeMenu}>Sign Up</Link>
+          <Link to="/signup" className="btn btn-solid bg-[#243b5f] hover:bg-[#1a2b47] text-white" onClick={closeMenu}>Sign Up</Link>
         </div>
       </div>
     </nav>
