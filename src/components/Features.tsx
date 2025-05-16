@@ -40,13 +40,13 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => {
   return (
     <div 
       ref={cardRef} 
-      className={`feature-card opacity-0 transform translate-y-5 transition-all duration-500 ease-out ${delay}`}
+      className={`feature-card opacity-0 transform translate-y-5 transition-all duration-300 ease-out ${delay}`}
     >
       <div className="feature-icon bg-highlight">
         <i className={`fas ${icon}`}></i>
       </div>
       <h3 className="text-xl font-semibold mb-4 text-primary">{title}</h3>
-      <p className="text-gray-medium text-base leading-7">{description}</p>
+      <p className="text-black text-base leading-7">{description}</p>
     </div>
   );
 };

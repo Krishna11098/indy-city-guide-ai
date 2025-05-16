@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
@@ -76,7 +77,7 @@
   }
   
   .btn-solid {
-    @apply bg-transparent text-white border-2 border-primary;
+    @apply bg-[#243b5f] text-white border-2 border-[#243b5f];
   }
   
   .btn-hero {
@@ -96,7 +97,7 @@
   }
   
   .section-header p {
-    @apply text-gray-medium max-w-[700px] mx-auto mt-6 text-lg;
+    @apply text-black max-w-[700px] mx-auto mt-6 text-lg;
   }
   
   .feature-card {

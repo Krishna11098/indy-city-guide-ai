@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,14 +14,6 @@ const Navbar = () => {
   };
   
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const navLinks = document.getElementById('navLinks');
@@ -36,11 +27,9 @@ const Navbar = () => {
       }
     };
     
-    window.addEventListener('scroll', handleScroll);
     document.addEventListener('click', handleClickOutside);
     
     return () => {
-      window.removeEventListener('scroll', handleScroll);
       document.removeEventListener('click', handleClickOutside);
     };
   }, []);
@@ -48,13 +37,11 @@ const Navbar = () => {
   return (
     <nav 
       id="navbar" 
-      className={`py-4 px-8 flex justify-between items-center bg-white/98 fixed w-full z-[1000] shadow-[0_2px_15px_rgba(0,0,0,0.1)] transition-all duration-300 md:px-8 ${
-        isScrolled ? 'py-3 shadow-[0_4px_20px_rgba(0,0,0,0.15)]' : ''
-      }`}
+      className="py-4 px-8 flex justify-between items-center bg-white/98 w-full z-[1000] shadow-[0_2px_15px_rgba(0,0,0,0.1)] transition-all duration-300 md:px-8"
     >
       <Link to="/" className="text-2xl font-bold text-primary cursor-pointer select-none flex items-center gap-2 transition-all duration-300">
         <img src="/indianapolis.png" alt="IndyChat Logo" className="h-[50px] w-[50px]" />
-        <span className={`${isScrolled ? 'text-xl' : 'text-2xl'}`}>IndyChat</span>
+        <span>IndyChat</span>
       </Link>
       
       <button 
@@ -80,7 +67,7 @@ const Navbar = () => {
         
         <div className="flex gap-4 ml-6 md:ml-0 md:mt-4 md:w-full md:flex-col md:gap-4">
           <Link to="/login" className="btn btn-outline hover:text-[#eee] hover:bg-[#243b5f]" onClick={closeMenu}>Login</Link>
-          <Link to="/signup" className="btn btn-solid hover:text-[#eee] hover:bg-[#243b5f]" onClick={closeMenu}>Sign Up</Link>
+          <Link to="/signup" className="btn btn-solid bg-[#243b5f] text-white hover:bg-[#1a2b47]" onClick={closeMenu}>Sign Up</Link>
         </div>
       </div>
     </nav>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="flex-1 bg-[#243b5f] py-40 px-8 flex flex-col items-center justify-center text-center text-white" id="home">
+    <div className="flex-1 bg-[#243b5f] py-40 px-8 flex flex-col items-center justify-center text-center text-white" id="home">
       <div className="max-w-[800px] mx-auto animate-fade-in">
         <h1 className="text-5xl font-extrabold mb-6 leading-tight shadow-[0_2px_4px_rgba(0,0,0,0.3)] md:text-4xl">
           Your Personal Indianapolis Guide
@@ -15,7 +15,7 @@ const Hero = () => {
           Start Chatting Now <i className="fas fa-arrow-right ml-1"></i>
         </Link>
       </div>
-    </section>
+    </div>
   );
 };
 

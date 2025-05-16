@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 
 type StepProps = {
@@ -50,7 +49,7 @@ const Step = ({ number, title, description, delay, isOdd }: StepProps) => {
       </div>
       <div className="step-content">
         <h3 className="text-2xl text-highlight mb-4">{title}</h3>
-        <p className="text-gray-medium leading-7">{description}</p>
+        <p className="text-black leading-7">{description}</p>
       </div>
     </div>
   );

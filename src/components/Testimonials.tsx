@@ -43,7 +43,7 @@ const TestimonialCard = ({ text, name, role, image, delay }: TestimonialCardProp
       ref={cardRef} 
       className={`testimonial-card opacity-0 transform translate-y-5 transition-all duration-500 ${delay}`}
     >
-      <p className="italic mb-8 text-gray-dark text-base leading-7 relative z-[1]">{text}</p>
+      <p className="italic mb-8 text-black text-base leading-7 relative z-[1]">{text}</p>
       <div className="flex items-center">
         <img 
           src={image} 
@@ -52,7 +52,7 @@ const TestimonialCard = ({ text, name, role, image, delay }: TestimonialCardProp
         />
         <div>
           <h4 className="font-semibold text-primary mb-1">{name}</h4>
-          <p className="text-sm text-gray-medium">{role}</p>
+          <p className="text-sm text-black">{role}</p>
         </div>
       </div>
     </div>
