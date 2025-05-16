@@ -42,7 +42,7 @@ const Step = ({ number, title, description, delay, isOdd }: StepProps) => {
     <div 
       ref={stepRef} 
       className={`step opacity-0 transform translate-y-5 transition-all duration-500 ${delay} ${
-        isOdd && !window.matchMedia("(max-width: 992px)").matches ? 'mr-[50%] text-right flex-row-reverse' : ''
+        isOdd && typeof window !== 'undefined' && !window.matchMedia("(max-width: 992px)").matches ? 'mr-[50%] text-right flex-row-reverse' : ''
       }`}
     >
       <div className="w-[60px] h-[60px] bg-[#243b5f] text-white rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0 shadow-[0_5px_15px_rgba(0,95,115,0.3)] hover:bg-[#ed1c24] cursor-pointer">
