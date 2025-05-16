@@ -87,7 +87,7 @@ const HowItWorks = () => {
   }, []);
   
   return (
-    <section ref={sectionRef} className="py-24 px-8 bg-white" id="how-it-works">
+    <div ref={sectionRef} className="py-24 px-8 bg-white" id="how-it-works">
       <div className="section-header opacity-0 transition-all duration-500">
         <h2>How It Works</h2>
         <p>Getting answers about Indianapolis has never been easier</p>
@@ -105,7 +105,7 @@ const HowItWorks = () => {
           <Step 
             number={2} 
             title="Ask Your Question" 
-            description="Type or speak your question about Indianapolis - anything from "When is trash pickup?" to "Best pizza downtown?""
+            description={"Type or speak your question about Indianapolis - anything from \"When is trash pickup?\" to \"Best pizza downtown?\""}
             delay="delay-2"
             isOdd={false}
           />
@@ -118,7 +118,7 @@ const HowItWorks = () => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

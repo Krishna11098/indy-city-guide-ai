@@ -90,35 +90,35 @@ const Testimonials = () => {
   }, []);
   
   return (
-    <section ref={sectionRef} className="py-24 px-8 bg-gray-light" id="testimonials">
+    <div ref={sectionRef} className="py-24 px-8 bg-gray-light" id="testimonials">
       <div className="section-header opacity-0 transition-all duration-500">
         <h2>What Our Users Say</h2>
         <p>Hear from Indianapolis residents who use IndyChat daily</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[1200px] mx-auto">
         <TestimonialCard 
-          text="\"IndyChat helped me find the perfect restaurant for my anniversary dinner. It knew all the best spots in Mass Ave and even suggested making reservations through OpenTable!\""
+          text={"\"IndyChat helped me find the perfect restaurant for my anniversary dinner. It knew all the best spots in Mass Ave and even suggested making reservations through OpenTable!\""}
           name="Sarah J."
           role="Downtown Resident"
           image="https://randomuser.me/api/portraits/women/45.jpg"
           delay=""
         />
         <TestimonialCard 
-          text="\"As a new resident, IndyChat has been invaluable for learning about trash pickup days and local services. It saved me hours of searching through city websites.\""
+          text={"\"As a new resident, IndyChat has been invaluable for learning about trash pickup days and local services. It saved me hours of searching through city websites.\""}
           name="Michael T."
           role="Broad Ripple"
           image="https://randomuser.me/api/portraits/men/32.jpg"
           delay="delay-1"
         />
         <TestimonialCard 
-          text="\"I use IndyChat every weekend to find family-friendly events. It's like having a personal concierge for the city! The kids love asking it what's happening this weekend.\""
+          text={"\"I use IndyChat every weekend to find family-friendly events. It's like having a personal concierge for the city! The kids love asking it what's happening this weekend.\""}
           name="Lisa M."
           role="Fountain Square"
           image="https://randomuser.me/api/portraits/women/68.jpg"
           delay="delay-2"
         />
       </div>
-    </section>
+    </div>
   );
 };
 
